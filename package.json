@@ -3,14 +3,14 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "plotly.js": "^1.54.7",
-        "plotly.js-gl3d-dist-min": "^1.54.7",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
+        "@react-three/drei": "^9.0.0",
+        "@react-three/fiber": "^8.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
         "react-icons": "^3.10.0",
-        "react-plotly.js": "^2.4.0",
         "react-router-dom": "^5.2.0",
-        "react-scripts": "3.4.4"
+        "react-scripts": "5.0.1",
+        "three": "^0.182.0"
     },
     "scripts": {
         "analyze": "node scripts/analyze.js",
@@ -35,10 +35,9 @@
         ]
     },
     "devDependencies": {
-        "@testing-library/jest-dom": "^4.2.4",
-        "@testing-library/react": "^9.3.2",
-        "@testing-library/user-event": "^7.1.2",
-        "jest-canvas-mock": "^2.2.0",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
         "prettier": "^2.3.0",
         "progress-bar-webpack-plugin": "^2.1.0",
         "webpack-bundle-analyzer": "^3.8.0"
