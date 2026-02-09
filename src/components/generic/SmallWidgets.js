@@ -22,7 +22,7 @@ const ToggleSwitch = ({ id, value, handleChange, showValue }) => (
 )
 
 const Card = ({ title, other, children }) => (
-    <div>
+    <div className="border">
         <div className="card-header">
             {title}
             {other}

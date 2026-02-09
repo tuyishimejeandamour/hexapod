@@ -1,4 +1,4 @@
-import { Nav, NavDetailed } from "./Nav"
+import { Nav } from "./Nav"
 import HexapodPlot from "./HexapodPlot"
 import DimensionsWidget from "./DimensionsWidget"
-export { Nav, NavDetailed, HexapodPlot, DimensionsWidget }
+export { Nav, HexapodPlot, DimensionsWidget }

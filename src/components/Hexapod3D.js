@@ -3,12 +3,12 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Line, Box, Cylinder } from '@react-three/drei';
 import * as THREE from 'three';
 
-// Colors matching the reference image mechanical aesthetic
-const BODY_COLOR = "#4a90d9"; // Blue body plate
-const SERVO_COLOR = "#2d3436"; // Black/Dark Grey for motors
-const BRACKET_COLOR = "#dfe6e9"; // Silver/White for brackets
-const ROD_COLOR = "#b2bec3"; // Metallic rod color
-const FOOT_COLOR = "#2d3436"; // Rubber foot tip
+// Colors matching the reference image (Dark Grey + Red Accents)
+const BODY_COLOR = "#2d3436"; // Dark grey/black body
+const SERVO_COLOR = "#d63031"; // Red anodized joints (the red rings in the photo)
+const BRACKET_COLOR = "#636e72"; // Dark metallic grey for brackets
+const ROD_COLOR = "#2d3436"; // Dark grey rod
+const FOOT_COLOR = "#1e272e"; // Black rubber foot tip
 const GROUND_COLOR = "#1a2a3a";
 const PAPER_BG_COLOR = "#0d1520";
 

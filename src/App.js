@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter as Router } from "react-router-dom"
 import { DEFAULT_POSE } from "./templates"
 import { SECTION_NAMES } from "./components/vars"
-import { Nav, NavDetailed, DimensionsWidget } from "./components"
+import { Nav, DimensionsWidget } from "./components"
 import { updateHexapod, Page } from "./AppHelpers"
 import HexapodPlot from "./components/HexapodPlot"
 
@@ -72,24 +72,20 @@ class App extends React.Component {
         <Router>
             <Nav />
             <div id="main">
-                <div id="sidebar">
-                    <div hidden={!this.state.inHexapodPage}>
-                        <DimensionsWidget
-                            params={{ dimensions: this.state.hexapod.dimensions }}
-                            onUpdate={this.manageState}
-                        />
-                    </div>
+                <div id="sidebar" hidden={!this.state.inHexapodPage}>
+                    <DimensionsWidget
+                        params={{ dimensions: this.state.hexapod.dimensions }}
+                        onUpdate={this.manageState}
+                    />
                     <Page pageComponent={this.pageComponent} />
-                    {!this.state.inHexapodPage ? <NavDetailed /> : null}
                 </div>
-                <div id="plot" className="border" hidden={!this.state.inHexapodPage}>
+                <div id="plot" hidden={!this.state.inHexapodPage}>
                     <HexapodPlot
                         revision={this.state.revision}
                         hexapod={this.state.hexapod}
                     />
                 </div>
             </div>
-            {this.state.inHexapodPage ? <NavDetailed /> : null}
         </Router>
     )
 }
